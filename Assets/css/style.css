@@ -14,19 +14,65 @@ body{
 }
 
 
-/*header,
-nav,
-main,
-div {
-  border: 2px solid black;
-}*/
+[src $=".svg"]{
+filter: invert(100%) sepia(8%) saturate(7499%) hue-rotate(210deg) brightness(111%) contrast(94%); 
+}
+
+.header-svg {
+  filter: invert(0%) sepia(2%) saturate(7426%) hue-rotate(106deg) brightness(89%) contrast(100%);
+  width: 2rem ;
+
+}
+input{
+  background-color: #f7fee7;
+  border-radius: 20px;
+  width: 90%;  
+}
+
+.search{
+  width: 60%;
+  padding: 10px;
+}
+
+.account-icons{
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+
+}
 
 button{
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
   background-color:#10b981;
   color: white;
+  margin: 1rem;
+  width: 200px;
+ 
   
+}
+.buttons{
+ width: 30%;
+
+}
+
+header div {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+header > div{
+  margin: 0 2% 0 2%;
+}
+
+.header-text{
+  display: block;
+}
+
+.header-text > p, .header-text > h3 {
+  margin: 0;
 }
 
 nav{
